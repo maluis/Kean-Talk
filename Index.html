@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kean Talk</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f7; /* Light blue background */
+            color: #333;
+            overflow-x: hidden; /* Hide horizontal overflow */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes up at least the full height of the viewport */
+        }
+    
+        /* Header Styles */
+        header {
+    background-color: #0066ff; /* Blue header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #0047b3; /* Darker blue border */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    }
+
+    #kean-talk {
+    border: 2px solid #fff; /* White border around the text */
+    padding: 5px 10px; /* Add padding around the text */
+    border-radius: 5px; /* Add rounded corners */
+    }
+    
+        /* Navigation Styles */
+        nav {
+            background-color: #005ce6; /* Darker blue navigation */
+            padding: 20px; /* Increase padding to make it bigger */
+            text-align: center;
+            border-radius: 10px; /* Add rounded corners */
+            margin-bottom: 20px; /* Add space between header and navbar */
+        }
+    
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around; /* Evenly distribute items */
+        }
+    
+        nav ul li {
+            margin-bottom: 10px; /* Added margin between items */
+        }
+    
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold; /* Bold navigation links */
+        }
+    
+        nav ul li a:hover {
+            background-color: #0047b3; /* Darker blue on hover */
+            border-radius: 5px; /* Add rounded corners on hover */
+            padding: 5px 10px; /* Increase padding on hover */
+        }
+    
+        /* Main Content Styles */
+        .container {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white container background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            padding: 20px;
+            text-align: center; /* Center-align text */
+            margin-bottom: 20px; /* Add space between container and footer */
+        }
+    
+    
+        .container h2,
+        .container p {
+            margin-bottom: 20px; /* Add some space between headings and paragraphs */
+            color: #333; /* Dark text color */
+        }
+    
+        /* Footer Styles */
+        footer {
+            margin-top: auto; /* Push footer to bottom */
+            background-color: #0066ff; /* Blue footer */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #0047b3; /* Darker blue border */
+        }
+
+        /* Slideshow Styles */
+        .slideshow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place behind other content */
+            overflow: hidden; /* Hide overflow from images */
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .slideshow img.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://jobs.sciencecareers.org/_/jobseekers-frontend/image/c337deb2-9650-4477-925d-88cc9d5b078f" alt="Logo 1" style="max-width: 100px; margin-right: 10px;">
+        <h1 id="kean-talk">Kean Talk</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="log-in.html">Home</a></li>
+            <li><a href="log-in.html">Profile</a></li>
+            <li><a href="log-in.html">Messages</a></li>
+            <li><a href="log-in.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slideshow Images -->
+    <div class="slideshow">
+        <img src="https://www.newjerseyalmanac.com/uploads/1/0/9/0/10904396/kean_orig.jpg" alt="Slideshow Image 1" class="active">
+        <img src="https://attsports.com/wp-content/uploads/2021/11/eDJI_0360-scaled.jpg" alt="Slideshow Image 2">
+        <img src="https://njbmagazine.com/wp-content/uploads/2018/09/KeanRendering.jpg" alt="Slideshow Image 3">
+        <img src="https://www.northjersey.com/gcdn/presto/2021/05/13/PCNJ/516779db-0ea0-4f15-8257-67252fe317aa-kean1.jpg?crop=6015,3383,x0,y302&width=3200&height=1800&format=pjpg&auto=webp" alt="Slideshow Image 4">
+        <img src="https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/keanathletics.com/images/2023/9/16/Sura_23A.jpg" alt="Slideshow Image 5">
+        <img src="https://i0.wp.com/kutower.com/wp-content/uploads/2021/11/Esports3-edited.jpg?fit=1024%2C516&ssl=1" alt="Slideshow Image 6">
+        <img src="https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/keanathletics.com/images/2022/9/19/MS022vCent-173_lwLyh.jpg" alt="Slideshow Image 7">
+        <!-- Add more images as needed -->
+    </div>
+
+    <div class="container">
+        <h2>Welcome to Kean Talk!</h2>
+        <img src="https://yt3.googleusercontent.com/jIjUQAEIxxp-YOSN0JupHo-9QjGv5AMF8GpR9tdEw9-obpaY4nyjsga9MUL192hTYnHRsbpUdw=s900-c-k-c0x00ffffff-no-rj" alt="Kean Talk Logo" style="max-width: 200px; margin-bottom: 20px;">
+        <p style="font-size: 18px; font-family: 'Arial', sans-serif; line-height: 1.6;">
+            Welcome to the ultimate platform for connecting with your peers, sharing ideas, and exploring new horizons. Whether you're a student, faculty member, or alumni, Kean Talk offers a vibrant community where you can engage in meaningful conversations, stay updated on campus events, and forge lifelong connections.
+        </p>
+        <p style="font-size: 18px; font-family: 'Arial', sans-serif; line-height: 1.6;">
+            Join us on this exciting journey as we celebrate diversity, foster creativity, and empower individuals to make a difference. Let your voice be heard, and let's build a brighter future together!
+        </p>
+    </div>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Kean Talk. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Slideshow
+        const slides = document.querySelectorAll('.slideshow img');
+        let currentSlide = 0;
+
+        function showSlides() {
+            slides[currentSlide].style.opacity = 0;
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].style.opacity = 1;
+            setTimeout(showSlides, 8000);
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
